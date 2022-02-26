@@ -3,11 +3,10 @@
 
 LedControl lc = LedControl(19, 5, 18, 1);
 
+const int SWITCH = 36;
+
 unsigned long delaytime = 250;
-
 unsigned int counter = 0;
-
-bool state = true;
 
 void setup()
 {
@@ -87,7 +86,7 @@ void printNumber(int v)
 
 void loop()
 {
-  if (digitalRead(36) == HIGH)
+  if (digitalRead(SWITCH) == HIGH)
   {
     counter++;
     printNumber(counter);
