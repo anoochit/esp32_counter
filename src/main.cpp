@@ -94,7 +94,6 @@ void loop()
   }
   else
   {
-
     printNumber(counter);
     delay(delaytime);
   }
